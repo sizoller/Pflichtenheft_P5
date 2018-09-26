@@ -2,12 +2,11 @@
                                         %{class} = fhnwreport, article, 
                                         %          report, book, beamer, standalone
 \input{header}			                %loads all packages, definitions and settings												
-\title{Der Einstieg in \LaTeX}          %Project Title
-\author{Vorlage und Beispiele}          %Document Type => Technical Report, ...
-\date{Windisch, 13.08.2018}             %Place and Date
+\title{Pflichtenheft}          %Project Title
+\author{Projekt 5}          %Document Type => Technical Report, ...
+\date{Windisch, {\today}}             %Place and Date
 
 \begin{document}
-
 %%---TITLEPAGE---------------------------------------------------------------------------
 \selectlanguage{ngerman}                %ngerman or english
 \maketitle
@@ -26,10 +25,10 @@
 \begin{tabular}{>{\bf}p{4cm} l}
 Hochschule                 &    Hochschule für Technik - FHNW\\
 Studiengang                &    Elektro- und Informationstechnik\\
-Autor   		           & 	Patrick Studer und Hanspeter Schmid\\
-Betreuer                   &    Anita Gertiser\\
-Auftraggeber               &    Sebastian Gaulocher\\
-Version                    &    1.2 %Normally not used!
+Autor   		           & 	Adrian Annaheim und Simon Zoller\\
+Betreuer                   &    Pascal Schleuniger\\
+Auftraggeber               &    Ferrum\\
+Version                    &    0.0 %Normally not used!
 \end{tabular}
 \end{center}
 }
@@ -39,7 +38,7 @@ Version                    &    1.2 %Normally not used!
 %%---ABSTRACT----------------------------------------------------------------------------
 \selectlanguage{ngerman}				%ngerman or english
 \thispagestyle{empty}
-\include{sections/abstract}
+%\include{sections/abstract}
 
 %%---TABLE OF CONTENTS-------------------------------------------------------------------
 \pagenumbering{Roman}		
@@ -49,11 +48,11 @@ Version                    &    1.2 %Normally not used!
 
 %%---TEXT--------------------------------------------------------------------------------
 \pagenumbering{arabic}
-\include{sections/basics}
-\include{sections/floats}
-\include{sections/equations}
-\include{sections/tikz}
-\include{sections/bibliography}
+\include{sections/Projektziele}
+\include{sections/Zeitplan}
+\include{sections/Projektvereinbarung}
+%\include{sections/tikz}
+%\include{sections/bibliography}
 
 %%---BIBLIOGRAPHY------------------------------------------------------------------------
 {\sloppypar
@@ -64,7 +63,7 @@ Version                    &    1.2 %Normally not used!
 }
 
 %%---APPENDIX----------------------------------------------------------------------------
-\include{sections/appendix}
+%\include{sections/appendix}
 
 %%---NOTES for DEBUG---------------------------------------------------------------------
 \ifdraft{%Do this only if mode=draft
